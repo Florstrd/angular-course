@@ -1,0 +1,20 @@
+<h2>Random number generator</h2>
+<p>Write a number in the input field and press the button to add a random number to your number.</p>
+<p>{{ outputNumber }}</p>
+<input type="number" [(ngModel)]="inputNumber" />
+<br><br>
+<button (click)="onButtonClick()">Generate a random number</button>
+<p>Divide the value with:</p>
+<select [(ngModel)]="divideNumber">
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select>
+<br><br>
+<button (click)="division()">Divide with number</button>
