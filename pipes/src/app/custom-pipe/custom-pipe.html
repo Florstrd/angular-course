@@ -1,0 +1,4 @@
+<h2>Custom pipe</h2>
+<p> {{ inputString }} -> {{ outputString | firstpipe }}</p>
+<input [(ngModel)]="inputString">
+<button (click)="transformString()">Transform the string</button>
