@@ -1,0 +1,18 @@
+<button (click)="setDiv('name')">Name</button>
+<button (click)="setDiv('age')">Age</button>
+<button (click)="setDiv('study')">Studies</button>
+
+<div [ngSwitch]="changeDiv">
+    <div *ngSwitchCase="'name'">
+        <h2>Name</h2>
+        <p>My name is Dennis</p>
+    </div>
+    <div *ngSwitchCase="'age'">
+        <h2>Age</h2>
+        <p>I am 24 years old</p>
+    </div>
+    <div *ngSwitchCase="'study'">
+        <h2>Studies</h2>
+        <p>I study Information Technology</p>
+    </div>
+</div>

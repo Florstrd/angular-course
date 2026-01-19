@@ -1,0 +1,4 @@
+<h2>Image displayer</h2>
+<button (click)="showToggle()">Show/Hide image</button>
+<br>
+<img *ngIf="isClicked" height="200px" [src]="imagePath">
